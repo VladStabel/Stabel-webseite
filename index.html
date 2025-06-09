@@ -5,130 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stabel Fahrzeugpflege</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #111;
-            color: #fff;
-        }
-        header {
-            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-            padding: 40px 20px;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 48px;
-            margin: 0;
-        }
-        header p {
-            font-size: 20px;
-            color: #ccc;
-        }
-        .main-image {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .main-image h2 {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            font-size: 36px;
-            border-radius: 8px;
-        }
-        .content, .gallery, .about {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .content h3, .about h3 {
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .content p, .about p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .gallery h3 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .gallery-images {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-        }
-        .gallery-images img {
-            width: 300px;
-            border-radius: 8px;
-        }
-        .contact-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #ff4b2b;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        .contact-button:hover {
-            background: #ff3a1a;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1c1c1c;
-            font-size: 14px;
-            color: #aaa;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <h1>Stabel Fahrzeugpflege</h1>
-        <p>Professionelle Autoaufbereitung in Deutschland</p>
+        <p>Glanz, der begeistert – Professionelle Autopflege in Deutschland</p>
     </header>
 
-    <div class="main-image">
-        <h2>Glanz, der begeistert</h2>
-    </div>
+    <section class="hero">
+        <img src="assets/hero.jpg" alt="Politur SONAX und Sportwagen">
+    </section>
 
-    <div class="content">
-        <h3>Unsere Leistungen</h3>
-        <p>
-            Wir bieten professionelle Fahrzeugpflege für Privat- und Geschäftskunden.
-            Von Innenreinigung bis zur Lackaufbereitung – bei uns ist Ihr Fahrzeug in besten Händen.
-        </p>
-        <a href="https://wa.me/49123456789" class="contact-button">Jetzt per WhatsApp kontaktieren</a>
-    </div>
+    <section class="services">
+        <h2>Unsere Leistungen</h2>
+        <ul>
+            <li>🚗 Außen- und Innenreinigung</li>
+            <li>✨ Lackpolitur mit SONAX Produkten</li>
+            <li>🛡️ Keramikversiegelung</li>
+            <li>🧽 Felgenreinigung & Pflege</li>
+        </ul>
+    </section>
 
-    <div class="gallery">
-        <h3>Unsere Arbeit</h3>
-        <div class="gallery-images">
-            <img src="photo1.jpg" alt="Polierter Sportwagen">
-            <img src="photo2.jpg" alt="Detailarbeit an Felgen">
-            <img src="photo3.jpg" alt="Innenreinigung Mercedes">
-        </div>
-    </div>
+    <section class="gallery">
+        <h2>Galerie</h2>
+        <img src="assets/car1.jpg" alt="Sportwagen poliert">
+        <img src="assets/car2.jpg" alt="Auto nach Pflege">
+    </section>
 
-    <div class="about">
-        <h3>Über uns</h3>
-        <p>
-            Stabel Fahrzeugpflege ist ein Familienunternehmen mit Leidenschaft für Perfektion.
-            Wir arbeiten mit hochwertigen Produkten wie SONAX, um den besten Glanz und Schutz für Ihr Fahrzeug zu garantieren.
-        </p>
-    </div>
+    <section class="contact">
+        <h2>Kontakt</h2>
+        <p>📍 Musterstraße 12, 12345 Berlin</p>
+        <p>📞 +49 123 456789</p>
+        <p>📧 info@stabel-fahrzeugpflege.com</p>
+    </section>
 
     <footer>
-        © 2025 Stabel Fahrzeugpflege. Alle Rechte vorbehalten.
+        <p>© 2025 Stabel Fahrzeugpflege</p>
     </footer>
-
 </body>
 </html>
