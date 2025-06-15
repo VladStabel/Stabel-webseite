@@ -1,2 +1,2 @@
-# Stabel-webseite
+# Stabel-website
 SONAX.de
