@@ -2,46 +2,66 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stabel Fahrzeugpflege</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stabel Fahrzeugpflege</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/icon.png" type="image/png">
 </head>
 <body>
-    <header>
-        <h1>Stabel Fahrzeugpflege</h1>
-        <p>Glanz, der begeistert – Professionelle Autopflege in Deutschland</p>
-    </header>
+  <header>
+    <img src="img/logo.jpg" alt="STABEL Fahrzeugpflege Logo" class="logo">
+    <p>Professionelle Fahrzeugpflege aus Immendingen</p>
+    <nav>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
 
-    <section class="hero">
-        <img src="assets/hero.jpg" alt="Politur SONAX und Sportwagen">
+  <main>
+    <section id="leistungen">
+      <h2>Unsere Leistungen</h2>
+      <ul>
+        <li>✔️ Gründliche Handwäsche</li>
+        <li>✔️ Innen- & Außenreinigung</li>
+        <li>✔️ Politur & Keramikversiegelung</li>
+        <li>✔️ Felgenreinigung</li>
+      </ul>
     </section>
 
-    <section class="services">
-        <h2>Unsere Leistungen</h2>
-        <ul>
-            <li>🚗 Außen- und Innenreinigung</li>
-            <li>✨ Lackpolitur mit SONAX Produkten</li>
-            <li>🛡️ Keramikversiegelung</li>
-            <li>🧽 Felgenreinigung & Pflege</li>
-        </ul>
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <div class="gallery">
+        <img src="img/car1.jpg" alt="Auto 1">
+        <img src="img/car2.jpg" alt="Auto 2">
+      </div>
     </section>
 
-    <section class="gallery">
-        <h2>Galerie</h2>
-        <img src="assets/car1.jpg" alt="Sportwagen poliert">
-        <img src="assets/car2.jpg" alt="Auto nach Pflege">
+    <section id="bewertungen">
+      <h2>Kundenmeinungen</h2>
+      <p>Ihre Bewertung könnte hier stehen! Zufriedene Kunden? Teilen Sie Ihre Erfahrung bald hier.</p>
     </section>
 
-    <section class="contact">
-        <h2>Kontakt</h2>
-        <p>📍 Musterstraße 12, 12345 Berlin</p>
-        <p>📞 +49 123 456789</p>
-        <p>📧 info@stabel-fahrzeugpflege.com</p>
-    </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p><strong>Adresse:</strong> Kastanienweg 11/1, 78194 Immendingen</p>
+      <p><strong>Telefon:</strong> <a href="tel:+4917632012558">0176 32012558</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/4917632012558">Jetzt schreiben</a></p>
+      <p><strong>E-Mail:</strong> info@stabel-fahrzeugpflege.com</p>
 
-    <footer>
-        <p>© 2025 Stabel Fahrzeugpflege</p>
-    </footer>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Ihr Name" required>
+        <input type="email" name="email" placeholder="Ihre E-Mail" required>
+        <textarea name="nachricht" placeholder="Ihre Nachricht" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Stabel Fahrzeugpflege | DE | EN | RU</p>
+  </footer>
 </body>
 </html>
