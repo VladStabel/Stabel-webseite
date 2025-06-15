@@ -2,66 +2,133 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stabel Fahrzeugpflege</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/icon.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stabel Fahrzeugpflege</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #111;
+            color: #fff;
+        }
+        header {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            color: #ccc;
+        }
+        .main-image {
+            background-image: url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-image h2 {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            font-size: 36px;
+            border-radius: 8px;
+        }
+        .content, .gallery, .about {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .content h3, .about h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .content p, .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .gallery h3 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .gallery-images img {
+            width: 300px;
+            border-radius: 8px;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #ff4b2b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .contact-button:hover {
+            background: #ff3a1a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1c1c1c;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="img/logo.jpg" alt="STABEL Fahrzeugpflege Logo" class="logo">
-    <p>Professionelle Fahrzeugpflege aus Immendingen</p>
-    <nav>
-      <a href="#leistungen">Leistungen</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#bewertungen">Bewertungen</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="leistungen">
-      <h2>Unsere Leistungen</h2>
-      <ul>
-        <li>✔️ Gründliche Handwäsche</li>
-        <li>✔️ Innen- & Außenreinigung</li>
-        <li>✔️ Politur & Keramikversiegelung</li>
-        <li>✔️ Felgenreinigung</li>
-      </ul>
-    </section>
+    <header>
+        <h1>Stabel Fahrzeugpflege</h1>
+        <p>Professionelle Autoaufbereitung in Deutschland</p>
+    </header>
 
-    <section id="galerie">
-      <h2>Galerie</h2>
-      <div class="gallery">
-        <img src="img/car1.jpg" alt="Auto 1">
-        <img src="img/car2.jpg" alt="Auto 2">
-      </div>
-    </section>
+    <div class="main-image">
+        <h2>Glanz, der begeistert</h2>
+    </div>
 
-    <section id="bewertungen">
-      <h2>Kundenmeinungen</h2>
-      <p>Ihre Bewertung könnte hier stehen! Zufriedene Kunden? Teilen Sie Ihre Erfahrung bald hier.</p>
-    </section>
+    <div class="content">
+        <h3>Unsere Leistungen</h3>
+        <p>
+            Wir bieten professionelle Fahrzeugpflege für Privat- und Geschäftskunden.
+            Von Innenreinigung bis zur Lackaufbereitung – bei uns ist Ihr Fahrzeug in besten Händen.
+        </p>
+        <a href="https://wa.me/49123456789" class="contact-button">Jetzt per WhatsApp kontaktieren</a>
+    </div>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p><strong>Adresse:</strong> Kastanienweg 11/1, 78194 Immendingen</p>
-      <p><strong>Telefon:</strong> <a href="tel:+4917632012558">0176 32012558</a></p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/4917632012558">Jetzt schreiben</a></p>
-      <p><strong>E-Mail:</strong> info@stabel-fahrzeugpflege.com</p>
+    <div class="gallery">
+        <h3>Unsere Arbeit</h3>
+        <div class="gallery-images">
+            <img src="photo1.jpg" alt="Polierter Sportwagen">
+            <img src="photo2.jpg" alt="Detailarbeit an Felgen">
+            <img src="photo3.jpg" alt="Innenreinigung Mercedes">
+        </div>
+    </div>
 
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Ihr Name" required>
-        <input type="email" name="email" placeholder="Ihre E-Mail" required>
-        <textarea name="nachricht" placeholder="Ihre Nachricht" required></textarea>
-        <button type="submit">Absenden</button>
-      </form>
-    </section>
-  </main>
+    <div class="about">
+        <h3>Über uns</h3>
+        <p>
+            Stabel Fahrzeugpflege ist ein Familienunternehmen mit Leidenschaft für Perfektion.
+            Wir arbeiten mit hochwertigen Produkten wie SONAX, um den besten Glanz und Schutz für Ihr Fahrzeug zu garantieren.
+        </p>
+    </div>
 
-  <footer>
-    <p>© 2025 Stabel Fahrzeugpflege | DE | EN | RU</p>
-  </footer>
+    <footer>
+        © 2025 Stabel Fahrzeugpflege. Alle Rechte vorbehalten.
+    </footer>
+
 </body>
 </html>
