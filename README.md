@@ -1,2 +1,0 @@
-# Stabel-website
-SONAX.de
