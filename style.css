@@ -2,40 +2,33 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #111;
+    padding: 0;
+    text-align: center;
+    background-color: #111;
     color: #fff;
 }
 header {
-    background: #e60000;
+    background-color: #000;
     padding: 20px;
-    text-align: center;
 }
-header .logo {
-    max-height: 100px;
-    display: block;
-    margin: 0 auto 10px;
+.logo {
+    max-width: 100px;
 }
-h1 {
-    margin: 0;
-    font-size: 2em;
-}
-.gallery {
+.services, .partner {
     padding: 20px;
-    text-align: center;
 }
-.gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
-.gallery-container img {
-    max-width: 300px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+ul li {
+    padding: 5px 0;
 }
-.about {
-    background: #222;
-    padding: 20px;
-    font-size: 1.1em;
+.partner-logo {
+    max-width: 150px;
+}
+footer {
+    background-color: #222;
+    padding: 10px;
+    font-size: 14px;
 }
