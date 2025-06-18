@@ -3,32 +3,36 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background: #1b1b1b;
+    color: white;
+}
+header, footer {
     background-color: #111;
-    color: #fff;
-}
-header {
-    background-color: #000;
     padding: 20px;
+    text-align: center;
 }
-.logo {
-    max-width: 100px;
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
 }
-.services, .partner {
+.gallery {
     padding: 20px;
+    text-align: center;
 }
-ul {
-    list-style-type: none;
-    padding: 0;
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-ul li {
-    padding: 5px 0;
+.gallery-row div {
+    width: 30%;
 }
-.partner-logo {
-    max-width: 150px;
+.gallery-row img {
+    width: 100%;
+    border-radius: 8px;
 }
-footer {
-    background-color: #222;
-    padding: 10px;
-    font-size: 14px;
+.about {
+    padding: 20px;
 }
