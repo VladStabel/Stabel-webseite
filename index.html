@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>STABEL Fahrzeugpflege</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>STABEL Fahrzeugpflege</h1>
+        <nav>
+            <select id="languageSwitcher" onchange="switchLanguage(this.value)">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2 data-lang="de">Professionelle Fahrzeugpflege in Immendingen</h2>
+            <h2 data-lang="en" style="display:none;">Professional Car Care in Immendingen</h2>
+            <h2 data-lang="ru" style="display:none;">Профессиональный уход за автомобилем в Иммендингене</h2>
+        </section>
+
+        <section id="services">
+            <h3 data-lang="de">Unsere Leistungen</h3>
+            <h3 data-lang="en" style="display:none;">Our Services</h3>
+            <h3 data-lang="ru" style="display:none;">Наши Услуги</h3>
+            <ul>
+                <li data-lang="de">Gründliche Handwäsche außen</li>
+                <li data-lang="en" style="display:none;">Thorough hand wash exterior</li>
+                <li data-lang="ru" style="display:none;">Тщательная ручная мойка снаружи</li>
+
+                <li data-lang="de">Felgenreinigung</li>
+                <li data-lang="en" style="display:none;">Rim cleaning</li>
+                <li data-lang="ru" style="display:none;">Чистка дисков</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h3 data-lang="de">Kontakt</h3>
+            <h3 data-lang="en" style="display:none;">Contact</h3>
+            <h3 data-lang="ru" style="display:none;">Контакты</h3>
+            <p>Kastanienweg 11/1, 78194 Immendingen</p>
+            <p>📞 0176 32012558</p>
+        </section>
+    </main>
+
+    <script>
+        function switchLanguage(lang) {
+            const all = document.querySelectorAll('[data-lang]');
+            all.forEach(el => el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none');
+        }
+    </script>
+</body>
+</html>
